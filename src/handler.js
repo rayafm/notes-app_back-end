@@ -22,9 +22,8 @@ const addNoteHandler = (request, h) => {
             message: 'Catatan berhasil ditambahkan', 
             data: { 
                 noteId: id,
-            },
-        }); 
-        response.header('Access-Control-Allow-Origin', '*');
+            }
+        });
         response.code(201);
         return response;
     }
